@@ -21,8 +21,10 @@ RUN apt-get clean && \
 # Adding Jenkins user
 RUN adduser --system jenkins
 
+sudo usermod -aG docker jenkins
+
 # Add Jenkins user
-RUN mkdir /root/jenkins/.ssh
+RUN mkdir /jenkins/.ssh
 
 # Installing jmeter
 RUN mkdir /jmeter \
