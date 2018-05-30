@@ -25,9 +25,6 @@ RUN groupadd docker
 
 RUN usermod -aG docker jenkins
 
-# Add Jenkins user
-RUN mkdir /jenkins/.ssh
-
 # Installing jmeter
 RUN mkdir /jmeter \
     && cd /jmeter/ \
