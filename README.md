@@ -16,7 +16,7 @@
 
 <b>2. Setting up Swarm Mode Cluster:</b>
 
-<b>-On Master Node:</b>
+-<b>On Master Node:</b>
 
               $docker swarm init --listen-addr <master-ip>:2377 --advertise-addr <master-ip>:2377
 
