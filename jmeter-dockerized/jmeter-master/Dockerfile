@@ -1,5 +1,7 @@
 FROM vinniekaboom/jmeter_base:latest
 
-MAINTAINER vinniekaboom
+LABEL MAINTAINER="vinniekaboom@protonmail.com"
+
+LABEL Description="jmeter-master"
 
 EXPOSE 60000
