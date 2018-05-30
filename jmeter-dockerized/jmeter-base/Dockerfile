@@ -21,7 +21,7 @@ RUN apt-get clean && \
 # Adding Jenkins user
 RUN adduser --system jenkins
 
-sudo usermod -aG docker jenkins
+RUN usermod -aG docker jenkins
 
 # Add Jenkins user
 RUN mkdir /jenkins/.ssh
