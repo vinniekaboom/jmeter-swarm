@@ -1,5 +1,8 @@
 FROM ubuntu:latest
-MAINTAINER vinniekaboom
+
+LABEL MAINTAINER="vinniekaboom@protonmail.com"
+
+LABEL Description="jmeter-base"
 
 # JMeter version
 ARG JMETER_VERSION=4.0
