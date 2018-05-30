@@ -1,10 +1,10 @@
 version: "3.1"
 services:
   master:
-    image: vinsdocker/jmmaster
+    image: vinniekaboo/jmeter-master:base
     tty: true
     ports:
-      - "7000"
+      - "60000"
     networks:
       jm-network:
          ipv4_address: 10.5.0.5
@@ -18,14 +18,14 @@ services:
       placement:
           constraints: [node.role == manager]
   slave:
-    image: vinsdocker/jmserver
+    image: vinniekaboom/jmeter-server:base
     tty: true
     networks:
       jm-network:
          ipv4_address: 10.5.0.7
     ports:
-      - "60000"
-      - "7000"
+      - "50000"
+      - "1099"
     deploy:
       mode: global
       #replicas: 1
