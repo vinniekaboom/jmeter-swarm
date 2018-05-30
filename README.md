@@ -16,11 +16,11 @@
 
 <b>2. Setting up Swarm Mode Cluster:</b>
 
-<b>On Master Node:</b>
+<b> On Master Node:</b>
 
               $docker swarm init --listen-addr <master-ip>:2377 --advertise-addr <master-ip>:2377
 
-<b>On Slave Node:</b>
+<b> On Slave Node:</b>
 
               $docker swarm join --token <TOKEN> master-ip  <-- Run this command on all the slave nodes
 
@@ -38,6 +38,6 @@ Login to master node and pull the repository:
                 $cd jmeter-dockerized
 
 
-<b>Running Docker Compose</b>
+<b> Running Docker Compose</b>
 
                 sudo docker stack deploy -c docker-compose.yml jm
