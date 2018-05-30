@@ -21,6 +21,8 @@ RUN apt-get clean && \
 # Adding Jenkins user
 RUN adduser --system jenkins
 
+RUN groupadd docker
+
 RUN usermod -aG docker jenkins
 
 # Add Jenkins user
