@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM openjdk:8-jre-slim
 
 LABEL MAINTAINER="vinniekaboom@protonmail.com"
 
@@ -12,17 +12,9 @@ RUN apt-get clean && \
     apt-get update && \
     apt-get -qy install \
     wget \
-    default-jre-headless \
     telnet \
     iputils-ping \
-    unzip \
-    git
-
-# Adding Jenkins user
-RUN adduser --system jenkins
-
-# Add .ssh directory
-RUN mkdir /home/jenkins/.ssh
+    unzip
 
 # Installing jmeter
 RUN mkdir /jmeter \
