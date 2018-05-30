@@ -24,8 +24,8 @@
 
 Login to master node and pull the repository:
 
-                $git clone https://github.com/ajeetraina/jmeter-docker
-                $cd jmeter-docker
+                $git clone https://github.com/vinniekaboom/jmeter-swarm.git
+                $cd jmeter-dockerized
 
 
 <b>Running Docker Compose</b>
