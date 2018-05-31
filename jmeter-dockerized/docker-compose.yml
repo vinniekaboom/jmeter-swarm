@@ -27,8 +27,8 @@ services:
       - "50000"
       - "1099"
     deploy:
-      mode: global
-      #replicas: 1
+      #mode: global
+      replicas: 1
       restart_policy:
         condition: on-failure
         delay: 10s
