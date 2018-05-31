@@ -1,7 +1,7 @@
 version: "3.1"
 services:
   master:
-    image: vinniekaboom/jmeter-master:latest
+    image: vinsdocker/jmmaster
     tty: true
     ports:
       - "60000"
@@ -18,7 +18,7 @@ services:
       placement:
           constraints: [node.role == manager]
   slave:
-    image: vinniekaboom/jmeter-server:latest
+    image: vinsdocker/jmserver
     tty: true
     networks:
       jm-network:
